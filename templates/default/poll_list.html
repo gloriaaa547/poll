@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查看投票主題</title>
+</head>
+<body>
+    <h1>投票主題列表-ListView</h1>
+    <u1>
+        {% for poll in poll_list %}
+        <a href=""{%}
+        <a href="{% url 'poll_edit' poll.id %}">{{poll.dubject}}</a>
+        <li>{{poll,created}} <a href="{% url 'poll_view' poll.id %}">{{poll.subject}}</a></li>
+        {% endfor %}
+
+    </u1>
+</body>
+</html>00
